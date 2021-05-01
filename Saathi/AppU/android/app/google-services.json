@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "113048517755",
+    "firebase_url": "https://saathixebia-default-rtdb.firebaseio.com",
+    "project_id": "saathixebia",
+    "storage_bucket": "saathixebia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113048517755:android:db69f664e918c085e5b6de",
+        "android_client_info": {
+          "package_name": "com.example.sathi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113048517755-hqhgl11sqbinkv8bv8rimvdc11nsmr3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnkdzlvZCktw1JLy6Xj9zdU5JJfnHeaGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113048517755-hqhgl11sqbinkv8bv8rimvdc11nsmr3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
