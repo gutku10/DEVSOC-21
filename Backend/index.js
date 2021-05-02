@@ -37,20 +37,20 @@ admin.initializeApp({
   databaseURL: "https://saathixebia-default-rtdb.firebaseio.com"
 });
 
-app.get("/signin", (req, res) => {
+app.get("/", (req, res) => {
   res.render("login");
 });
 
-app.post("/signin", (req, res) => {
+app.post("/", (req, res) => {
   var email = req.body.email;
   var password = req.body.password;
   firebase
     .auth()
     .signInWithEmailAndPassword(email, password)
     .then(() => {
-      res.redirect("/");
+      res.redirect("/dashboard");
     })
-    .catch((err) => res.redirect("/signin"));
+    .catch((err) => res.redirect("/register"));
 });
 
 
@@ -67,11 +67,11 @@ app.post("/register", (req, res) => {
     email: email,
     password: password,
   })
-  res.redirect("/signin");
+  res.redirect("/");
 });
 
 
-app.get("/", (req, res) => {
+app.get("/dashboard", (req, res) => {
   var device = firebase.database().ref("QR Codes");
   device.once("value", (data) => {
     if (data.val()) {
